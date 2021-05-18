@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Expense Tracker</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="sheet.css">
+</head>
+
+<body>
+  <div class="titles">
+    <h1>Expense Tracker</h1>
+    <h3>Add A New Item:</h3>
+  </div>
+  <form>
+    <div class="name">
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name" placeholder="Where was the expense made?" required>
+    </div>
+    <div class="second-line">
+      <div class="date">
+      <label for="date">Date:</label>
+      <input type="date" name="date" id="date" required>
+      </div>
+      <div class="amount">
+      <label for="amount">Amount:</label>
+      <input type="text" name="amount" id="amount" required>
+      </div>
+    </div>
+    <button class="expense" type="submit">Add Expense</button>
+  </form>
+
+  <div class="data-display">
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Date</th>
+          <th>Amount</th>
+          <th><button class="delete"></button></th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td aria-placeholder="No expenses added yet!"></td>
+          <td></td>
+          <td></td>
+          <td>Total: <span>$0.00</span></td>
+        <tr>
+      </tfoot>
+    </table>
+  </div>
+
+  <script src="script.js" async defer></script>
+</body>
+
+</html>
